@@ -17,7 +17,7 @@ def books():
 
     books.append(Book("The Catcher in the Rye", "J. D. Salinger"))
     books.append(Book("The Handmaid's Tale", "Margaret Atwood"))
-    books.append(Book("The Trial", "Franz Kalka"))
+    books.append(Book("The Trial", "Franz Kafka"))
     books.append(Book("To Kill a Mockingbird", "Harper Lee"))
 
     return render_template('books.html',books=books)
