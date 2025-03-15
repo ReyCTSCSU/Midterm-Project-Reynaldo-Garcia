@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Flask App{% endblock %}
+
+{% block content %}
+    <h2>Book List</h2>   
+    <div class="row">
+        <div class="column-left">
+            <img src="{{ url_for('static',
+            filename='images/catcherintherye.jpeg')}}">
+        </div>
+        <div class="column-right">
+            <h3>{%print(books[0].getTitle())%}</h3>
+            <h3>{%print(books[0].getAuthor())%}</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column-left">
+            <img src="{{ url_for('static',
+            filename='images/thehandmaidstale.jpg')}}">
+        </div>
+        <div class="column-right">
+            <h3>{%print(books[1].getTitle())%}</h3>
+            <h3>{%print(books[1].getAuthor())%}</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column-left">
+            <img src="{{ url_for('static',
+            filename='images/thetrial.jpg')}}">
+        </div>
+        <div class="column-right">
+            <h3>{%print(books[2].getTitle())%}</h3>
+            <h3>{%print(books[2].getAuthor())%}</h3>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="column-left">
+            <img src="{{ url_for('static',
+            filename='images/tokillamockingbird.jpg')}}">
+        </div>
+        <div class="column-right">
+            <h3>{%print(books[3].getTitle())%}</h3>
+            <h3>{%print(books[3].getAuthor())%}</h3>
+        </div>
+    </div>
+    <a href="/">Link to Home</a>
+{% endblock %}
